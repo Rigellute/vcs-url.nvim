@@ -1,3 +1,9 @@
+# vcs-url.nvim
+
+Copy the remote URL of the current file in to your clipboard.
+
+🚧 Now only works for GitHub and GitLab.
+
 ## Installation
 
 Install the theme with your preferred package manager, such as [folke/lazy.nvim](https://github.com/folke/lazy.nvim):
