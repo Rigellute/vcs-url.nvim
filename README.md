@@ -16,6 +16,14 @@ Install the theme with your preferred package manager, such as [folke/lazy.nvim]
 
 Or you can map it to a key:
 
-```vim
-vim.keymap.set("n", "<leader>gv", "<cmd>lua require('plugins/Rigellute/vcs-url.nvim').copy_url()<cr>")
+```lua
+local wk = require("which-key")
+
+wk.register({
+  ["<leader>"] = {
+    g = {
+      v = { "<cmd>VCSCopyUrl<cr>", "Copy remote URL" },
+    },
+  },
+})
 ```
